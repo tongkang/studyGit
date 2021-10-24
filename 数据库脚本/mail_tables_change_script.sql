@@ -8,3 +8,14 @@
 
 alter table draft_audit_node_qrobot_mail add column email_key char(32) DEFAULT NULL COMMENT '邮件模板key';
 
+
+-- 实体类中加上emailKey
+1. AuditNodeQrobotMail
+2. DraftAuditNodeQrobotMail
+3. DraftAuditNodeQrobotMailFile
+4. AuditNodeQrobotMailFile
+5. DraftExternalQrobotConfig
+6. ExternalQrobotConfig
+
+`AuditNodeDetail`中`qRobotConfig`添加一个字段`实体类中加上emailKey`
+`ExternalQrobotInfo`中`triggerNotifyConfig`中添加一个字段`实体类中加上emailKey`
