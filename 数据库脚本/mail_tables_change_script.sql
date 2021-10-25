@@ -5,7 +5,7 @@
 -- 5. draft_external_qrobot_config          表中添加一个逻辑外键 email_key
 -- 6. external_qrobot_config              表中添加一个逻辑外键 email_key
 
-
+-- 已添加
 alter table draft_audit_node_qrobot_mail add column email_key char(32) DEFAULT NULL COMMENT '邮件模板key';
 
 
